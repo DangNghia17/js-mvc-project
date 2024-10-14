@@ -1,0 +1,20 @@
+{
+  "name": "js-sports-project-mvc",
+  "version": "1.0.0",
+  "description": "A simple MVC-based JavaScript project",
+  "main": "src/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "vite preview",
+    "start:json-server": "json-server --watch json-server/db.json --port 5000"
+  },
+  "dependencies": {
+    "axios": "^1.7.7"
+  },
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.3",
+    "sass": "^1.35.1",
+    "vite": "^5.4.9"
+  }
+}
