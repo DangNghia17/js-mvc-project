@@ -1,7 +1,22 @@
-export default {
-    root: './',  // Chỉ đường dẫn gốc của dự án
-    server: {
-      port: 5173,  // Cổng mặc định của Vite
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+    build: {
+        target: 'esnext',
     },
-  };
-  
+    resolve: {
+        alias: {
+            '~': '/src',
+        },
+    },
+
+    server: {
+        proxy: {
+            '/api': {
+                target: 'http://localhost:3000',
+                changeOrigin: true,
+                rewrite: (path) => path.replace(/^\/api/, ''),
+            },
+        },
+    },
+});

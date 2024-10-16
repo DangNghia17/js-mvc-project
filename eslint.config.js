@@ -23,10 +23,10 @@ export default [
             prettier: eslintPluginPrettier,
         },
         rules: {
-            'prettier/prettier': 'error', // Áp dụng quy tắc Prettier
+            'prettier/prettier': 'error',
         },
     },
-    // Sử dụng eslint-config-prettier để tắt các quy tắc xung đột
+
     {
         rules: {
             ...prettierRules,

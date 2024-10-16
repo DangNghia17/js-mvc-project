@@ -15,5 +15,11 @@
     "tabWidth": 4,
     "trailingComma": "all",
     "useTabs": false,
-    "vueIndentScriptAndStyle": false
+    "vueIndentScriptAndStyle": false,
+    "indent": 2,
+    "quotes": "single",
+    "objectPropertyQuotes": "as-needed",
+    "jsxQuotes": "double",
+    "jsxBracketPosition": "end",
+    "endOfLine": "auto"
 }
